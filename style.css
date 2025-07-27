@@ -2,8 +2,46 @@ html, body {
     overflow-x: hidden;
   }
 
+  
+.center-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.header-title {
+  font-size: 1.8rem;
+  color: #fff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 20px;
+}
+
+.btn.button-er {
+  background-color: rgb(75, 6, 63);
+  border: none;
+  padding: 15px 24px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  color: brown;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 800;
+  transition: transform 0.2s ease;
+}
 
 
+ .btn.button-er:hover {
+  transform: scale(1.05);
+}
+
+.emoji {
+  font-size: 1.4rem;
+}
+ 
+ 
 .body-ee{
     font: 12px Arial, georgia, serif;
     background-image: url(images/baabbby-2.jpg);
@@ -21,7 +59,11 @@ html, body {
     object-fit: cover;
     z-index: -1;
 } */
+/* 
+.header-title{
+    justify-content: center;
 
+} */
 .link-1{
     text-decoration: none;
     color: rgb(59, 56, 59);
@@ -56,6 +98,18 @@ html, body {
 /* detail section */
 
 .body-34{
-    background-color: rgb(68, 27, 27);
+    background-color: rgb(119, 11, 11); 
+    background-image: url(images/babby-5.jpg);
+    background-size: cover;
 
 }
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  min-height: 100vh;
+  text-align: center;
+}
+

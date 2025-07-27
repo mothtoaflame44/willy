@@ -11,6 +11,8 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
   <link rel="manifest" href="/site.webmanifest" />
   <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
 </head>
 
 <body class="body-34">
@@ -18,14 +20,31 @@
   <section class="detail-esc" id="page1">
 
     <h2>Sooooo, Babbby just like the color purpple you're royalty </h2>
-    <img src="images/babby-3.jpg"  height="150px" width="150px" alt="Memory Photo" />
+    <h3><italic>And you know it, don't you?</italic></h3>
+    <p> I remember asking your favorite colour, you said "Purple,Red". I thought of one thing "royalty". Nerd fact Purple is seen as a Royal luxury for many dynasty. You;re my royalty sharp, cunning. You rule my heart with wickedness. You know very well that's not fair. Not fair at all. What a wicked thing to do, to make me dream of you.</p>
+    <a href="index.html"><img src="images/sheepbabby.jpg"  height="150px" width="150px" alt="Memory Photo" /></a><br>
     <button onclick="showPage('page2')">Next</button>
   </section>
 
   <section id="page2" style="display: none;">
-    <h2>Page 2: Memories</h2>
-    <img src="images/babby4.jpg"  height="150px" width="100px" alt="Memory Photo" />
+    <h2>Memories</h2>
+    <h3><italic>Memories bring back, memories bring back 'you'.</italic></h3>
+    <p> I know the time you've spent on this world is a lot more compare to our time together, through a screen. God, heavens i'd be damned, to see you once, to feel your skin beneath my fingertips that aside. But sweetie, you've been so strong your tiny little feet paddling over the rough surface to your graceful walk now as an adult. You've done it a lot. A smart , gentle, funny, charming gentlemen you've  turned into. I'm proud of you. You have learned a lot by yourself. You have done enough. </p>
+    <img src="images/baby-babby.jpg"  height="150px" width="100px" alt="Memory Photo" />
+    <img src="images/babby-crab.jpg"  height="150px" width="100px" alt="Memory Photo" />
+    <img src="images/babby-gangsta.jpg"  height="150px" width="100px" alt="Memory Photo" /><br>
     <button onclick="showPage('page1')">Back</button>
+    <button onclick="showPage('page3')">Next</button>
+  </section>
+
+
+  <section id="page3" style="display: none;">
+    <h2>Resilent and loving</h2>
+    <img src="images/babby-6.jpg"  height="150px" width="100px" alt="Memory Photo" /><br>
+    <p> I know you have been through a lot, and I know you have been strong. You have been resilient, and you have been loving. You have been a great friend, a great partner, and a great person. I am so proud of you, and I love you so much. </p>
+    <button onclick="showPage('page2')">Back</button>
+    <h1><italic>Happy Birthday, my love.<br>I love you so much.</italic></h3>
+    
   </section>
 
   <script>
@@ -34,9 +53,19 @@
         sec.style.display = "none";
       });
       document.getElementById(id).style.display = "block";
+      
+        if (id === "page3") {
+    confetti({
+      particleCount: 200,
+      spread: 120,
+      origin: { y: 0.6 },
+    });
+  }
     }
+
   </script>
 </body>
+
 
 </html>
 
